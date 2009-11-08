@@ -1,0 +1,12 @@
+- @tweets.each do |tweet|
+  %li.tweet{:class => @tweet_class}
+    %span.avatar
+      %a{:href => tweet.user_link}
+        %img{:src => tweet.profile_image_url, :alt => tweet.username, :height => 48, :width => 48}
+    %span.main
+      %span.text= tweet.filtered_text
+      %span.meta== &#8212; #{tweet.name} (<a href="#{tweet.user_link}">@#{tweet.username}</a>)
+
+- if !@tweets.empty?
+  :javascript
+    window.latestTweet = #{@tweets[0].received_at};

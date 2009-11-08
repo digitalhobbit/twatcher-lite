@@ -1,0 +1,112 @@
+body {
+  background-color: #505;
+}
+
+h1 {
+  text-align: center;
+  color: #ee0;
+  font-size: 300%;
+  font-family: "Chalkboard", "Comic Sans MS", sans-serif;
+}
+
+#container {
+  margin: 1em auto;
+  position: relative;
+  width: 540px;
+  text-align: left;
+}
+
+#content {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.tweets {
+  margin: 50px 0 0 0;
+  list-style: none;
+  background-color: #dfd;
+  padding: 0px 10px;
+}
+
+li:first-child.tweet {
+  border-top: none;
+}
+
+li.tweet {
+  position: relative;
+  border-top: 1px dashed #aaa;
+  padding: 0.7em 0px 0.6em 0px;
+  margin: 0px 0px;
+}
+
+li.latest {
+  display: none;
+}
+
+.avatar {
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 0px;
+  margin: 0px 10px 0px 0px;
+  overflow: hidden;
+}
+
+.avatar a {
+  text-decoration: none;
+}
+
+.avatar img {
+  height: 48px;
+  width: 48px;
+  border-color: transparent;
+  border-width: 0px;
+}
+
+.main {
+  display: block;
+  margin-left: 60px;
+  min-height: 50px;
+  width: 455px;
+  overflow: hidden;
+}
+
+.text {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.text a {
+  text-decoration: none;
+  color: #000;
+}
+
+.text a:hover {
+  text-decoration: underline;
+  color: #00f;
+}
+
+.meta {
+  display: block;
+  margin: 3px 0px 0px 20px;
+  color: #444;
+  font-size: 0.764em;
+}
+
+.meta a {
+  text-decoration: none;
+  color: #444;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+  color: #00f;
+}
+
+.lol {
+  font-size: 130%;
+  font-weight: bold;
+  color: #f00;
+}
